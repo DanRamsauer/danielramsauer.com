@@ -225,3 +225,28 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 125%;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 35%;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  background-color: #112222;
+  color: white;
+  text-align: center;
+}
