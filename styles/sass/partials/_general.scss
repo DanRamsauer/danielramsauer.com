@@ -1,7 +1,9 @@
+*{
+    color: white;
+}
 html{
     font-size: 125%;
 }
-
 nav{
     position: fixed;
     left: 0;
@@ -17,8 +19,15 @@ a{
     text-decoration: none;
 }
 
-*{
-    background-color: #112222;
-    color: white;
-    text-align: center;
+.contentWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    height: 100vh;
+    width: 85%;
+    margin: 200px auto;
 }
+@font-face {
+    font-family: kosannoncommercial;
+    src: url(../assests/fonts/Clip.ttf);
+   }

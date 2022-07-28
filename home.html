@@ -1,0 +1,70 @@
+<!-- toDo: make an animated background and make a flashind neon sign -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Ramsauer</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/e3f40a18b0.js" crossorigin="anonymous"></script>
+</head>
+<body class="home">
+
+    <!-- 
+    Original CSS code by Rose Liu 
+    https://codepen.io/Rosefae/pen/XPaMYL
+    -->
+    <div class="lamp">
+        <div class="lava">
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob top"></div>
+          <div class="blob bottom"></div>
+          
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+
+
+
+    <nav>
+        <ul>
+            <li><a href="./home.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="./about.html"><i class="fa-solid fa-address-card"></i></a></li>
+            <li><a href="./techStack.html"><i class="fa-solid fa-layer-group"></i></a></li>
+            <li><a href="./projects.html"><i class="fa-solid fa-server"></i></a></li>
+            <li><a href="./contact.html"><i class="fa-solid fa-reply"></i></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="wrapper">
+            <h1>Daniel Ramsauer</h1>
+            <h2 class="flicker">Web Developer</h2>
+            <div class="icons">
+                <i class="fa-brands fa-linkedin fa-lg"></i>
+                <i class="fa-brands fa-github fa-lg"></i>
+            </div> <!-- end of icons -->
+        </div> <!-- end of wrapper-->
+    </main>
+
+
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

@@ -1,16 +1,55 @@
 .home{
-   .center{
+   .wrapper{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
    }
    h1{
     text-align: start;
+    font-size: 4rem;
+   }
+   .icons{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
 
-    span{
-        margin: 20px auto;
+    i{
+        margin: 20px;
     }
    }
-   
+
+   .flicker {
+        font-family: kosannoncommercial;
+        font-size: 3rem;
+        color: white;
+        border: 0.2rem solid #fff;
+        border-radius: 2rem;
+        padding: 0.4em;
+        box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe;
+        animation: 1.5s infinite flicker;
+    }
+    
+    @keyframes flicker {
+        0%, 18%, 22%, 25%, 53%, 57%, 100% {
+            
+            text-shadow:
+            0 0 4px #C867FF,
+            0 0 11px #B026FF,
+            0 0 19px #B026FF,
+            0 0 40px #B026FF,
+            0 0 80px #B026FF;
+        }
+        20%, 24%, 55% {        
+            text-shadow: none;
+        }  
+    }
 }
