@@ -1,9 +1,24 @@
 .skills{
+    text-align: center;
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
     .techStack{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
 
         p{
             margin: 10px;
         }
+    }
+    button{
+        margin-top: 50px;
+        background-color: black;
+        width: 250px;
+        align-self: center;
     }
 }

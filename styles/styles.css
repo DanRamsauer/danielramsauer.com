@@ -269,6 +269,11 @@ a {
   font-family: kosannoncommercial;
   src: url(../assests/fonts/Clip.ttf);
 }
+.contentWrapper {
+  max-width: 1300px;
+  width: 80%;
+}
+
 .home .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,6 +294,10 @@ a {
   text-align: start;
   font-size: 4rem;
 }
+.home h2 {
+  font-family: kosannoncommercial;
+  font-size: 3rem;
+}
 .home .icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,9 +313,40 @@ a {
 .home .icons i {
   margin: 20px;
 }
-.home .flicker {
-  font-family: kosannoncommercial;
-  font-size: 3rem;
+
+.about {
+  text-align: center;
+}
+
+.skills {
+  text-align: center;
+}
+.skills img {
+  width: 100px;
+  height: 100px;
+}
+.skills .techStack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.skills .techStack p {
+  margin: 10px;
+}
+.skills button {
+  margin-top: 50px;
+  background-color: black;
+  width: 250px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.flicker {
   color: white;
   border: 0.2rem solid #fff;
   border-radius: 2rem;
@@ -316,6 +356,7 @@ a {
   -webkit-animation: 1.5s infinite flicker;
           animation: 1.5s infinite flicker;
 }
+
 @-webkit-keyframes flicker {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     text-shadow: 0 0 4px #C867FF, 0 0 11px #B026FF, 0 0 19px #B026FF, 0 0 40px #B026FF, 0 0 80px #B026FF;
@@ -324,6 +365,7 @@ a {
     text-shadow: none;
   }
 }
+
 @keyframes flicker {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     text-shadow: 0 0 4px #C867FF, 0 0 11px #B026FF, 0 0 19px #B026FF, 0 0 40px #B026FF, 0 0 80px #B026FF;
@@ -332,16 +374,6 @@ a {
     text-shadow: none;
   }
 }
-
-.skills .techStack {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.skills .techStack p {
-  margin: 10px;
-}
-
 html {
   height: 100%;
   background-color: #090a0f;
