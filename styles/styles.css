@@ -346,6 +346,12 @@ a {
       align-self: center;
 }
 
+.contact input,
+.contact textarea,
+.contact button {
+  color: black;
+}
+
 .flicker {
   color: white;
   border: 0.2rem solid #fff;
