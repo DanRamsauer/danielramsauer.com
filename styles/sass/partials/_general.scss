@@ -3,6 +3,10 @@
 }
 html{
     font-size: 125%;
+    // background-image: url(../assests/Photos/filip-mroz-023T4jyCRqA-unsplash.jpg);
+    // background-size: cover;
+    background-color:#090a0f;
+    background: radial-gradient(ellipse at bottom, rgba(27, 39, 53, 1), rgba(9, 10, 15, 1));
 }
 nav{
     position: fixed;
@@ -23,7 +27,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: first baseline;
-    height: 100vh;
+    height: 70vh;
     width: 85%;
     margin: 200px auto;
 }
@@ -31,11 +35,10 @@ a{
     font-family: kosannoncommercial;
     src: url(../assests/fonts/Clip.ttf);
    }
-//    body{
-//        background-image: url('../assests/Photos/neon-megapolis-background-with-buildings-skyscrapers_1441-2587.webp');
-//        background-size: cover;
-//     }
 .contentWrapper{
     max-width: 1300px;
     width: 80%;
+}
+h1{
+    font-size: 3rem;
 }

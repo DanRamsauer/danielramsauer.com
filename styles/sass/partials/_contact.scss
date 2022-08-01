@@ -4,4 +4,23 @@
     button{
         color: black;
     }
+    text-align: center;
+    .contentWrapper{
+        width: 40%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+
+        label,
+        button{
+            margin-top: 40px;
+            text-align: left;
+        }
+        button{
+            text-align: center;
+            width: 20%;
+            align-self: center;
+        }
+    }
 }

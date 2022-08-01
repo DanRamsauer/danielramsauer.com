@@ -9,43 +9,10 @@
     <script src="https://kit.fontawesome.com/e3f40a18b0.js" crossorigin="anonymous"></script>
 </head>
 <body class="contact">
-
-    <!-- 
-    Original CSS code by Rose Liu 
-    https://codepen.io/Rosefae/pen/XPaMYL
-    -->
-    <div class="lamp">
-        <div class="lava">
-          <div class="blob"></div>
-          <div class="blob"></div>
-          <div class="blob"></div>
-          <div class="blob"></div>
-          <div class="blob"></div>
-          <div class="blob"></div>
-          <div class="blob"></div>
-          <div class="blob"></div>
-          <div class="blob top"></div>
-          <div class="blob bottom"></div>
-          
-        </div>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-      <defs>
-        <filter id="goo">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-          <feBlend in="SourceGraphic" in2="goo" />
-        </filter>
-      </defs>
-    </svg>
-
-
-    
     <nav>
         <ul>
             <li><a href="./home.html"><i class="fa-solid fa-house"></i></a></li>
             <li><a href="./about.html"><i class="fa-solid fa-address-card"></i></a></li>
-            <li><a href="./techStack.html"><i class="fa-solid fa-layer-group"></i></a></li>
             <li><a href="./projects.html"><i class="fa-solid fa-server"></i></a></li>
             <li><a href="./contact.html"><i class="fa-solid fa-reply"></i></a></li>
         </ul>
@@ -53,9 +20,8 @@
 
     <main>
         <div class="contentWrapper">
-            <h1>Contact Me</h1>
-            <form action="https://formspree.io/f/xvoypkzn"method="POST">
-
+            <h1 class="flicker">Contact Me</h1>
+            <form action="https://formspree.io/f/xvoypkzn" method="POST" id="myForm">
 				
 				<label for="name">Name</label>
 				<input type="text" name="name">
@@ -67,14 +33,15 @@
 				<label for="message">Your message:</label>
 				<textarea name="message"></textarea> 
 
-				<input type="hidden" name="_next" value="//site.io/home.html"/>
+				<input type="hidden" name="_next" value="home.html"/>
 
-				<button type="submit">Send</button>
-          </form>
+				<button id="submit" type="submit">Send</button>
+
+            </form>
         </div>
     </main>
 
 
-    <script src="./scripts.js"></script>
+    <script src="./form.js"></script>
 </body>
 </html>
