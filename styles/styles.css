@@ -237,9 +237,25 @@ html {
 }
 
 nav {
-  position: fixed;
-  left: 0;
-  top: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 1.3rem;
+}
+nav a {
+  margin-right: 40px;
 }
 
 li {
@@ -259,12 +275,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: first baseline;
-      -ms-flex-pack: first baseline;
-          justify-content: first baseline;
-  height: 70vh;
-  width: 85%;
-  margin: 200px auto;
+  margin: 0 auto;
 }
 
 @font-face {
@@ -294,7 +305,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 90vh;
 }
 .home h1 {
   text-align: start;
@@ -313,25 +324,18 @@ h1 {
           flex-direction: column;
   position: fixed;
   right: 30px;
-  bottom: 100px;
+  bottom: 50%;
 }
 .home .icons i {
-  margin: 20px;
+  margin-top: 60px;
 }
 
 .about {
   text-align: center;
-  margin: 0 auto;
-}
-.about .contentWrapper {
-  height: 0%;
 }
 
 .skills {
   text-align: center;
-}
-.skills .contentWrapper {
-  height: 33vh;
 }
 .skills h2 {
   font-size: 2rem;
@@ -392,19 +396,35 @@ h1 {
 .projects {
   text-align: center;
 }
+.projects img {
+  width: 1000px;
+}
+.projects .contentWrapper {
+  position: relative;
+}
 
 #projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
   font-size: 1.3rem;
 }
 #projects li {
-  margin: 0 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  text-align: left;
 }
 #projects a {
   margin: 0 20px;

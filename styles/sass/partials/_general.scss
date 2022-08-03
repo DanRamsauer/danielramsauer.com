@@ -9,9 +9,16 @@ html{
     background: radial-gradient(ellipse at bottom, rgba(27, 39, 53, 1), rgba(9, 10, 15, 1));
 }
 nav{
-    position: fixed;
-    left: 0;
-    top: 35%;
+    display: flex;
+    justify-content: center;
+    ul{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.3rem;
+    }
+    a{
+        margin-right: 40px;
+    }
 }
 
 li{
@@ -26,10 +33,7 @@ a{
 .contentWrapper{
     display: flex;
     flex-direction: column;
-    justify-content: first baseline;
-    height: 70vh;
-    width: 85%;
-    margin: 200px auto;
+    margin: 0 auto;
 }
 @font-face {
     font-family: kosannoncommercial;

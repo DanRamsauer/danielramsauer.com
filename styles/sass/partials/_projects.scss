@@ -1,14 +1,26 @@
 .projects{
     text-align: center;
+    img{
+        width: 1000px;
+    }
+    .contentWrapper{
+        position: relative;
+    }
 }
 
 #projects{
     display: flex;
-    margin: 0 auto;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
     font-size: 1.3rem;
+
     li{
-        margin: 0 50px;
+        flex-direction: column;
+        display: flex;
+        margin: 20px;
+        text-align: left;
     }
     a{
         margin: 0 20px;
