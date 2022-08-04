@@ -396,9 +396,6 @@ h1 {
 .projects {
   text-align: center;
 }
-.projects img {
-  width: 1000px;
-}
 .projects .contentWrapper {
   position: relative;
 }
@@ -412,7 +409,6 @@ h1 {
           justify-content: space-between;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
   font-size: 1.3rem;
 }
 #projects li {
@@ -423,8 +419,14 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px;
-  text-align: left;
+  text-align: center;
+}
+#projects li img {
+  width: 100%;
+  text-align: end;
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+  z-index: -10;
 }
 #projects a {
   margin: 0 20px;

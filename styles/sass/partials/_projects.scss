@@ -1,8 +1,5 @@
 .projects{
     text-align: center;
-    img{
-        width: 1000px;
-    }
     .contentWrapper{
         position: relative;
     }
@@ -13,16 +10,24 @@
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    justify-content: space-between;
     font-size: 1.3rem;
 
     li{
         flex-direction: column;
         display: flex;
-        margin: 20px;
-        text-align: left;
+        text-align: center;
+
+        img{
+            width: 100%;
+            text-align: end;
+            transform: translateY(-200px);
+            z-index: -10;
+        }
     }
     a{
         margin: 0 20px;
     }
 }
+
+// TODO: maybe try to have the website info inside the image
+// TODO: look at other portfolios and what they did with the projects page
