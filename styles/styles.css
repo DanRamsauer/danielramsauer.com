@@ -228,6 +228,7 @@ html {
 
 * {
   color: white;
+  font-size: 1.2rem;
 }
 
 html {
@@ -256,6 +257,11 @@ nav ul {
 }
 nav a {
   margin-right: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+nav a:hover {
+  text-decoration: underline;
 }
 
 li {
@@ -289,6 +295,38 @@ a {
 
 h1 {
   font-size: 3rem;
+}
+
+.hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  visibility: hidden;
+  background-color: gray;
+  width: 50%;
+  height: 100%;
+  top: -30px;
+  left: 0;
+  z-index: 20;
+}
+.hidden li {
+  margin-top: 20px;
+}
+
+.visible {
+  visibility: visible;
+}
+
+nav i {
+  visibility: hidden;
 }
 
 .home .wrapper {
@@ -327,7 +365,13 @@ h1 {
   bottom: 50%;
 }
 .home .icons i {
-  margin-top: 60px;
+  margin-top: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.home .icons i:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .about {
@@ -343,6 +387,12 @@ h1 {
 .skills img {
   width: 100px;
   height: 100px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.skills img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 .skills .techStack {
   display: -webkit-box;
@@ -404,9 +454,9 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   padding: 0;
   font-size: 1.3rem;
@@ -421,15 +471,45 @@ h1 {
   display: flex;
   text-align: center;
 }
-#projects li img {
-  width: 100%;
-  text-align: end;
-  -webkit-transform: translateY(-200px);
-          transform: translateY(-200px);
-  z-index: -10;
-}
 #projects a {
   margin: 0 20px;
+}
+#projects .projectOne,
+#projects .projectTwo {
+  position: relative;
+  width: 50%;
+  margin: 20px;
+}
+#projects img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+#projects .descriptions {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+#projects .projectOne:hover img {
+  opacity: 0.3;
+}
+#projects .projectTwo:hover img {
+  opacity: 0.3;
+}
+#projects .descriptions:hover {
+  opacity: 1;
 }
 
 .contact {
@@ -459,7 +539,7 @@ h1 {
 }
 .contact form button {
   text-align: center;
-  width: 20%;
+  width: 30%;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -491,5 +571,54 @@ h1 {
   }
   20%, 24%, 55% {
     text-shadow: none;
+  }
+}
+@media (max-width: 730px) {
+  .home .icons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    bottom: 20px;
+    left: 45%;
+  }
+  .home i {
+    margin-right: 15px;
+  }
+  .contact .contentWrapper {
+    width: 85%;
+  }
+}
+@media (max-width: 595px) {
+  .home h1 {
+    text-align: center;
+  }
+  nav .mainNav {
+    visibility: hidden;
+    position: absolute;
+  }
+  nav i {
+    visibility: visible;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 30;
+  }
+  h1 {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 495px) {
+  .home h2 {
+    width: 80%;
+    text-align: center;
+  }
+}
+@media (max-width: 420px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  .home h2 {
+    font-size: 2rem;
   }
 }

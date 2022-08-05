@@ -7,10 +7,23 @@
     <title>Daniel Ramsauer</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://kit.fontawesome.com/e3f40a18b0.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
     <nav>
-        <ul>
+        <ul class="mainNav">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</i></a></li>
+            <li><a href="./projects.html">Projects</i></a></li>
+            <li><a href="./contact.html">Contact</i></a></li>
+        </ul>
+
+        <i id="hamburger" class="fa-solid fa-bars fa-2xl"></i>
+        
+        <ul id="hiddenNav" class="hidden">
             <li><a href="./home.html">Home</a></li>
             <li><a href="./about.html">About</i></a></li>
             <li><a href="./projects.html">Projects</i></a></li>
@@ -61,11 +74,17 @@
                     <img src="./assests/Photos/api.png" alt="api logo">
                     <p>APIs</p>
                 </div>
+                <div class="firebase">
+                    <img src="./assests/Photos/firebase.png" alt="firebase logo">
+                    <p>Firebase</p>
+                </div>
             </div> <!-- end of skills -->
-            <button><a href="./assests/DanielRamsauerResume.pdf">View my resume here</a></button>
+            <button><a target="_blank" href="./assests/DanielRamsauerResume.pdf">View my resume here</a></button>
             </div> <!-- end of content wrapper -->
 
         </section>
     </main>
+
+    <script src="./hamburgerMenu.js"></script>
 </body>
 </html>

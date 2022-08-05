@@ -7,10 +7,23 @@
     <title>Daniel Ramsauer</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://kit.fontawesome.com/e3f40a18b0.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body class="projects">
     <nav>
-        <ul>
+        <ul class="mainNav">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</i></a></li>
+            <li><a href="./projects.html">Projects</i></a></li>
+            <li><a href="./contact.html">Contact</i></a></li>
+        </ul>
+
+        <i id="hamburger" class="fa-solid fa-bars fa-2xl"></i>
+        
+        <ul id="hiddenNav" class="hidden">
             <li><a href="./home.html">Home</a></li>
             <li><a href="./about.html">About</i></a></li>
             <li><a href="./projects.html">Projects</i></a></li>
@@ -21,13 +34,24 @@
         <main>
             <div class="contentWrapper">
                 <h1 class="flicker">Projects</h1>
+                
                 <ul id="projects">
                     <!-- projects go here -->
                 </ul>
+                <!-- <div class="projectOne">
+                    <img src="./assests/Photos/currencyConverter.png" alt="Avatar" class="imageOne">
+                    <div class="descriptions">
+                      <h3>Currency Converter</h3>
+                      <a href="https://incandescent-sprinkles-c54daa.netlify.app/">Live Link</a>
+                      <a href="https://github.com/Juno-Project-2/Currency-Converter">Repo</a>
+                      <p>An app that takes a number from the user and has them choose a source currency and target currency and it gives you the conversion rate</p>
+                    </div>
+                </div> -->
             </div>
         </main>
 
 
     <script src="./projects.js"></script>
+    <script src="./hamburgerMenu.js"></script>
 </body>
 </html>

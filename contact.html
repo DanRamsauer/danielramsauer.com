@@ -7,10 +7,23 @@
     <title>Daniel Ramsauer</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://kit.fontawesome.com/e3f40a18b0.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body class="contact">
     <nav>
-        <ul>
+        <ul class="mainNav">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</i></a></li>
+            <li><a href="./projects.html">Projects</i></a></li>
+            <li><a href="./contact.html">Contact</i></a></li>
+        </ul>
+
+        <i id="hamburger" class="fa-solid fa-bars fa-2xl"></i>
+        
+        <ul id="hiddenNav" class="hidden">
             <li><a href="./home.html">Home</a></li>
             <li><a href="./about.html">About</i></a></li>
             <li><a href="./projects.html">Projects</i></a></li>
@@ -23,14 +36,14 @@
             <h1 class="flicker">Contact Me</h1>
             <form action="https://formspree.io/f/xvoypkzn" method="POST" id="myForm">
 				
-				<label for="name">Name</label>
+				<label for="name">Name :</label>
 				<input type="text" name="name">
 				
-				<label for="email">Your email:</label>
+				<label for="email">Your email :</label>
 				<input type="email" name="email"> 
 				
 				
-				<label for="message">Your message:</label>
+				<label for="message">Your message :</label>
 				<textarea name="message"></textarea> 
 
 				<input type="hidden" name="_next" value="home.html"/>
@@ -43,5 +56,6 @@
 
 
     <script src="./form.js"></script>
+    <script src="./hamburgerMenu.js"></script>
 </body>
 </html>
