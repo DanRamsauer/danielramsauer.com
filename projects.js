@@ -50,6 +50,8 @@ const displayprojects = function () {
         
         div.classList.add(project.class);
         li.classList.add('descriptions');
+        anchorOne.classList.add('flicker');
+        anchorTwo.classList.add('flicker');
         anchorOne.setAttribute('target', '_blank');
         anchorTwo.setAttribute('target', '_blank');
     });

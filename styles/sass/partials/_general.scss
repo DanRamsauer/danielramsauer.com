@@ -4,10 +4,11 @@
 }
 html{
     font-size: 125%;
-    // background-image: url(../assests/Photos/filip-mroz-023T4jyCRqA-unsplash.jpg);
-    // background-size: cover;
-    background-color:#090a0f;
-    background: radial-gradient(ellipse at bottom, rgba(27, 39, 53, 1), rgba(9, 10, 15, 1));
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assests/Photos/filip-mroz-023T4jyCRqA-unsplash.jpg);
+    // background-image: url('../assests/Photos/photo-1563089145-599997674d42.avif');
+    background-size: cover;
+    // background-color:#090a0f;
+    // background: radial-gradient(ellipse at bottom, rgba(27, 39, 53, 1), rgba(9, 10, 15, 1));
 }
 nav{
     display: flex;
@@ -58,15 +59,16 @@ h1{
     align-items: center;
     position: absolute;
     visibility: hidden;
-    background-color: gray;
+    background-color: black;
     width: 50%;
     height: 100%;
     top: -30px;
     left: 0;
     z-index: 20;
+    padding: 100px;
 
     li{
-        margin-top: 20px;
+        margin: 20px;
     }
 }
 .visible{

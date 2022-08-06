@@ -1,3 +1,14 @@
+@media (max-width: 950px) {
+    #projects{
+        flex-wrap: wrap;
+
+        .projectOne,
+        .projectTwo {
+        width: 100%;
+        }
+    }
+}
+
 @media (max-width: 730px) {
     .home{
         .icons{
@@ -12,6 +23,25 @@
     .contact{
         .contentWrapper{
             width: 85%;
+        }
+    }
+    #projects{
+        
+        .descriptions {
+            opacity: 1;
+            position: relative;
+            transform: translate(-50%, -300px);
+        }
+        
+        .projectOne:hover img {
+            opacity: 1;
+        }
+        .projectTwo:hover img {
+            opacity: 1;
+        }
+        
+        .descriptions:hover {
+            opacity: 1;
         }
     }
 }
@@ -37,6 +67,14 @@
     }
     h1{
         margin-top: 150px;
+    }
+}
+
+@media (max-width: 595px) {
+    #projects{
+        .descriptions{
+            transform: translate(-50%, -240px);
+        }
     }
 }
 
