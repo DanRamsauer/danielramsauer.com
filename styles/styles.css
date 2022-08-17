@@ -233,8 +233,8 @@ html {
 
 html {
   font-size: 125%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assests/Photos/filip-mroz-023T4jyCRqA-unsplash.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assests/Photos/filip-mroz-023T4jyCRqA-unsplash.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assests/Photos/torontoBackground.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assests/Photos/torontoBackground.jpg);
   background-size: cover;
 }
 
@@ -475,8 +475,7 @@ nav i {
 #projects a {
   margin: 0 20px;
 }
-#projects .projectOne,
-#projects .projectTwo {
+#projects .project {
   position: relative;
   width: 50%;
   margin: 20px;
@@ -501,11 +500,11 @@ nav i {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20%;
 }
-#projects .projectOne:hover img {
-  opacity: 0.3;
-}
-#projects .projectTwo:hover img {
+#projects .project:hover img {
   opacity: 0.3;
 }
 #projects .descriptions:hover {

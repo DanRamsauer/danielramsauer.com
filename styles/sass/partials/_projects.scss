@@ -22,8 +22,7 @@
         margin: 0 20px;
     }
     
-    .projectOne,
-    .projectTwo {
+    .project {
     position: relative;
     width: 50%;
     margin: 20px;
@@ -46,12 +45,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20%;
   }
   
-  .projectOne:hover img {
-    opacity: 0.3;
-  }
-  .projectTwo:hover img {
+  .project:hover img {
     opacity: 0.3;
   }
   

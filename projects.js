@@ -4,8 +4,16 @@ const projectLinks = [
         livelink: 'https://incandescent-sprinkles-c54daa.netlify.app/',
         repo: 'https://github.com/Juno-Project-2/Currency-Converter',
         img : './assests/Photos/currencyConverter.png',
-        description: 'An website created with a partner that takes a number from the user and has them choose a source currency and target currency and it gives you the conversion rate',
-        class: 'projectOne'
+        description: 'A website created with a partner that takes a number from the user and has them choose a source currency and target currency and it gives you the conversion rate',
+        class: 'project'
+    },
+    {
+        name: 'Anime finder',
+        livelink: 'https://animes-finder.netlify.app/',
+        repo: 'https://github.com/DanRamsauer/daniel-ramsauer-project-three',
+        img : './assests/Photos/animeFinder.png',
+        description: 'A website that uses an api to display animes to the page and allows the user to add to favourites',
+        class: 'project'
     },
     {
         name: 'Captured Landing Page',
@@ -13,7 +21,7 @@ const projectLinks = [
         repo: 'https://github.com/DanRamsauer/daniel-ramsauer-project-one',
         img : './assests/Photos/Captured.png',
         description: 'A landing page for a fake website',
-        class: 'projectTwo'
+        class: 'project'
     }
 ]
 
