@@ -12,7 +12,7 @@ const projectLinks = [
         livelink: 'https://animes-finder.netlify.app/',
         repo: 'https://github.com/DanRamsauer/daniel-ramsauer-project-three',
         img : './assests/Photos/animeFinder.png',
-        description: 'A website that uses an api to display animes to the page and allows the user to add to favourites',
+        description: 'A React website that uses an api to display animes to the page and allows the user to add to favourites',
         class: 'project'
     },
     {
