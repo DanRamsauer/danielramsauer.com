@@ -16,11 +16,11 @@ const projectLinks = [
         class: 'project'
     },
     {
-        name: 'Captured Landing Page',
-        livelink: 'https://graceful-cajeta-2db571.netlify.app/',
-        repo: 'https://github.com/DanRamsauer/daniel-ramsauer-project-one',
-        img : './assests/Photos/Captured.png',
-        description: 'A landing page for a fake website',
+        name: 'Book Club',
+        livelink: 'https://junobookclub.netlify.app/',
+        repo: 'https://github.com/juno-book-club/book-club',
+        img : './assests/Photos/bookClub.png',
+        description: 'A website made with 3 other people. It takes from the Google books API and allows the user to search and login to add books to  their own favourites list',
         class: 'project'
     }
 ]
