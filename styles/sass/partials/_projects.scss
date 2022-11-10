@@ -1,60 +1,71 @@
-.projects{
-    text-align: center;
-    .contentWrapper{
-        position: relative;
-    }
+.project{
+  display: flex;
 }
 
-#projects{
-    display: flex;
-    // flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    font-size: 1.3rem;
 
-    li{
-        flex-direction: column;
-        display: flex;
-        text-align: center;
-    }
-    a{
-        margin: 0 20px;
-    }
+
+
+
+
+
+
+// .projects{
+//     text-align: center;
+//     .contentWrapper{
+//         position: relative;
+//     }
+// }
+
+// #projects{
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     margin: 0;
+//     padding: 0;
+//     font-size: 1.3rem;
+
+//     li{
+//         flex-direction: column;
+//         display: flex;
+//         text-align: center;
+//     }
+//     a{
+//         margin: 0 20px;
+//     }
     
-    .project {
-    position: relative;
-    width: 50%;
-    margin: 20px;
-  }
+//     .project {
+//     position: relative;
+//     width: 50%;
+//     margin: 20px;
+//     display: flex;
+//   }
   
-  img {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
+//   img {
+//     // display: block;
+//     // max-width: 50px;
+//     height: auto;
+//     object-fit: contain;
+//     object-position: 10px;
+//   }
   
-  .descriptions {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 20%;
-  }
+  // .descriptions {
+  //   transition: .5s ease;
+  //   opacity: 0;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   text-align: center;
+  //   width: 100%;
+  //   background-color: rgba(0, 0, 0, 0.6);
+  //   border-radius: 20%;
+  // }
   
-  .project:hover img {
-    opacity: 0.3;
-  }
+  // .project:hover img {
+  //   opacity: 0.3;
+  // }
   
-  .descriptions:hover {
-    opacity: 1;
-  }
-}
+  // .descriptions:hover {
+  //   opacity: 1;
+  // }
+// }

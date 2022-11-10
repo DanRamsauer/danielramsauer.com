@@ -1,4 +1,12 @@
-.home{
+.header{
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assests/Photos/torontoBackground.jpg);
+    background-size: cover;
+    height: 100vh;
+
+    a{
+        color: white;
+    }
    .wrapper{
     display: flex;
     flex-direction: column;
@@ -30,13 +38,3 @@
         }
     }
 }
-
-// TODO: Make the links on the side live and have icons for the nav
-// TODO: have links open another page and keeping my portfolio open
-// TODO: add favicon
-
-// TODO: Make site responsive
-// TODO: have hover effect on neon sign maybe it explodes when hovered on
-// TODO: hover animations and more animations on everything
-// TODO: have animations for going to the next page
-// TODO: look at website that I bought and go off that

@@ -1,18 +1,26 @@
 const projectLinks = [
     {
-        name: 'Currency Converter',
-        livelink: 'https://incandescent-sprinkles-c54daa.netlify.app/',
-        repo: 'https://github.com/Juno-Project-2/Currency-Converter',
-        img : './assests/Photos/currencyConverter.png',
-        description: 'A website created with a partner that takes a number from the user and has them choose a source currency and target currency and it gives you the conversion rate',
-        class: 'project'
-    },
-    {
         name: 'Anime finder',
         livelink: 'https://animes-finder.netlify.app/',
         repo: 'https://github.com/DanRamsauer/daniel-ramsauer-project-three',
         img : './assests/Photos/animeFinder.png',
         description: 'A React website that uses an api to display animes to the page and allows the user to add to favourites',
+        class: 'project'
+    },
+    {
+        name: 'Book Club Reads',
+        livelink: 'https://junobookclub.netlify.app/',
+        repo: 'https://github.com/juno-book-club/book-club',
+        img : './assests/Photos/bookClubReads.png',
+        description: 'A four person project that uses the google books API and google authentication to allow the user to search for books and add them to a favourites list. From that favourites list that user can remove them or mark them as read.',
+        class: 'project'
+    },
+    {
+        name: 'Currency Converter',
+        livelink: 'https://incandescent-sprinkles-c54daa.netlify.app/',
+        repo: 'https://github.com/Juno-Project-2/Currency-Converter',
+        img : './assests/Photos/currencyConverter.png',
+        description: 'A website created with a partner that takes a number from the user and has them choose a source currency and target currency and it gives you the conversion rate',
         class: 'project'
     },
     {
@@ -22,7 +30,7 @@ const projectLinks = [
         img : './assests/Photos/Captured.png',
         description: 'A landing page for a fake website',
         class: 'project'
-    }
+    },
 ]
 
     
@@ -58,8 +66,8 @@ const displayprojects = function () {
         
         div.classList.add(project.class);
         li.classList.add('descriptions');
-        anchorOne.classList.add('flicker');
-        anchorTwo.classList.add('flicker');
+        // anchorOne.classList.add('flicker');
+        // anchorTwo.classList.add('flicker');
         anchorOne.setAttribute('target', '_blank');
         anchorTwo.setAttribute('target', '_blank');
     });

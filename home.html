@@ -12,26 +12,26 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 </head>
-<body class="home">
-    <nav>
-        <ul class="mainNav">
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./about.html">About</i></a></li>
-            <li><a href="./projects.html">Projects</i></a></li>
-            <li><a href="./contact.html">Contact</i></a></li>
-        </ul>
-
-        <i id="hamburger" class="fa-solid fa-bars fa-2xl"></i>
-        
-        <ul id="hiddenNav" class="hidden">
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./about.html">About</i></a></li>
-            <li><a href="./projects.html">Projects</i></a></li>
-            <li><a href="./contact.html">Contact</i></a></li>
-        </ul>
-    </nav>
-
-    <main>
+<body>
+    
+    <section class="header">
+        <nav>
+            <ul class="mainNav">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">About</i></a></li>
+                <li><a href="./projects.html">Projects</i></a></li>
+                <li><a href="./contact.html">Contact</i></a></li>
+            </ul>
+    
+            <i id="hamburger" class="fa-solid fa-bars fa-2xl"></i>
+            
+            <ul id="hiddenNav" class="hidden">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">About</i></a></li>
+                <li><a href="./projects.html">Projects</i></a></li>
+                <li><a href="./contact.html">Contact</i></a></li>
+            </ul>
+        </nav>
         <div class="wrapper">
             <h1>Daniel Ramsauer</h1>
             <h2 class="flicker">Web Developer</h2>
@@ -40,8 +40,79 @@
                 <a target="_blank" href="https://github.com/DanRamsauer"><i class="fa-brands fa-github fa-lg"></i></a>
             </div> <!-- end of icons -->
         </div> <!-- end of wrapper-->
+    </section> <!-- end of header section -->
+    <main>
+        <section class="about">
+            <div class="contentWrapper">
+                <img src="./assests/Photos/self-image.jpg" alt="A portrait of myself">
+                <div class="aboutMe">
+                    <h2>About Me</h2>
+                    <p>I'm a Front End Developer that loves the creative and problem solving aspect of developing. I work well in any setting but really enjoy being on a team. Before Front End Development I was a tattoo artist. I have learnt multiple things while being a tattoo artist that would transfer well to web development.</p>
+                    <p>
+                        Web Development allows me to do what I love in constantly learning and creating a great user experience for everyone. My hope is to get on a team where my contributions lead to an accessible and amazing experience for everyone.
+                    </p>
+                    <p>
+                        When I'm not developing you can catch me playing video games or watching / playing sports.
+                    </p>
+                </div>
+            </div> <!-- end of content wrapper-->
+        </section> <!-- End of about -->
+
+        <section class="skills"> <!-- start of skills-->
+            <div class="contentWrapper"> <!-- start of content wrapper -->
+                <h2>Skills</h2>
+                <div class="techStack">
+                    <div class="html">
+                        <img src="./assests/Photos/html5-logo-31813.png" alt="html logo">
+                        <p>HTML5</p>
+                    </div>
+                    <div class="css">
+                        <img src="./assests/Photos/css-logo_1985012.png" alt="css logo">
+                        <p>CSS3</p>
+                    </div>
+                    <div class="scss">
+                        <img src="./assests/Photos/SeekPng.com_sass-logo-png_3771966.png" alt="scss logo">
+                        <p>SCSS</p>
+                    </div>
+                    <div class="js">
+                        <img src="./assests/Photos/javascript-39413.png" alt="JavaScript logo">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="jquery">
+                        <img src="./assests/Photos/jquery.png" alt="jquery logo">
+                        <p>jQuery</p>
+                    </div>
+                    <div class="react">
+                        <img src="./assests/Photos/react.png" alt="react logo">
+                        <p>React</p>
+                    </div>
+                    <div class="git">
+                        <img src="./assests/Photos/git.png" alt="git logo">
+                        <p>Git</p>
+                    </div>
+                    <div class="api">
+                        <img src="./assests/Photos/api.png" alt="api logo">
+                        <p>APIs</p>
+                    </div>
+                    <div class="firebase">
+                        <img src="./assests/Photos/firebase.png" alt="firebase logo">
+                        <p>Firebase</p>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- end of skills -->
+        <section class="projects">
+                <main>
+                    <div class="contentWrapper">
+                        <ul id="projects">
+                            <!-- projects go here -->
+                        </ul>
+                    </div>
+                </main>
+        </section>
     </main>
 
     <script src="./hamburgerMenu.js"></script>
+    <script src="./projects.js"></script>
 </body>
 </html>

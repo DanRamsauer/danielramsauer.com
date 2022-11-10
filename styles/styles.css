@@ -227,15 +227,11 @@ html {
 }
 
 * {
-  color: white;
   font-size: 1.2rem;
 }
 
 html {
   font-size: 125%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assests/Photos/torontoBackground.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assests/Photos/torontoBackground.jpg);
-  background-size: cover;
 }
 
 nav {
@@ -331,7 +327,17 @@ nav i {
   visibility: hidden;
 }
 
-.home .wrapper {
+.header {
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assests/Photos/torontoBackground.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assests/Photos/torontoBackground.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.header a {
+  color: white;
+}
+.header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,14 +353,14 @@ nav i {
           align-items: center;
   height: 90vh;
 }
-.home h1 {
+.header h1 {
   text-align: start;
   font-size: 4rem;
 }
-.home h2 {
+.header h2 {
   font-size: 3rem;
 }
-.home .icons {
+.header .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,35 +372,70 @@ nav i {
   right: 30px;
   bottom: 50%;
 }
-.home .icons i {
+.header .icons i {
   margin-top: 40px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.home .icons i:hover {
+.header .icons i:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
 
 .about {
+  margin: 70px 0;
   text-align: center;
+  color: black;
+}
+.about h2 {
+  font-size: 2.5rem;
+  position: relative;
+}
+.about h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 215px;
+  border-bottom: 5px solid black;
+}
+.about .contentWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.about .aboutMe {
+  margin: 0 50px;
+}
+.about .aboutMe h2, .about .aboutMe p {
+  text-align: left;
+}
+.about img {
+  max-width: 500px;
+  border-radius: 50%;
+  border: 5px solid purple;
 }
 
 .skills {
+  margin: 100px 0 0 0;
   text-align: center;
+  background-color: rgb(237, 237, 237);
 }
 .skills h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+  position: relative;
 }
-.skills img {
-  width: 100px;
-  height: 100px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.skills img:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+.skills h2::before {
+  content: "";
+  position: absolute;
+  left: 44.5%;
+  bottom: 0;
+  width: 146px;
+  border-bottom: 5px solid black;
 }
 .skills .techStack {
   display: -webkit-box;
@@ -408,12 +449,6 @@ nav i {
 }
 .skills .techStack p {
   margin: 10px;
-}
-.skills .flicker {
-  margin-top: 50px;
-  width: 300px;
-  -ms-flex-item-align: center;
-      align-self: center;
 }
 
 .skills {
@@ -444,71 +479,10 @@ nav i {
       align-self: center;
 }
 
-.projects {
-  text-align: center;
-}
-.projects .contentWrapper {
-  position: relative;
-}
-
-#projects {
+.project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0;
-  padding: 0;
-  font-size: 1.3rem;
-}
-#projects li {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-}
-#projects a {
-  margin: 0 20px;
-}
-#projects .project {
-  position: relative;
-  width: 50%;
-  margin: 20px;
-}
-#projects img {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-#projects .descriptions {
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 20%;
-}
-#projects .project:hover img {
-  opacity: 0.3;
-}
-#projects .descriptions:hover {
-  opacity: 1;
 }
 
 .contact {
