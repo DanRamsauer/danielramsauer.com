@@ -102,17 +102,42 @@
             </div>
         </section> <!-- end of skills -->
         <section class="projects">
-                <main>
-                    <div class="contentWrapper">
-                        <ul id="projects">
-                            <!-- projects go here -->
-                        </ul>
-                    </div>
-                </main>
+                <div class="contentWrapper">
+                    <ul id="projects">
+                        <h2>Projects</h2>
+                        <!-- projects go here -->
+                    </ul>
+                </div>
+        </section>
+        <section class="contact">
+            <div class="contentWrapper">
+                <h1>Contact Me</h1>
+                <form action="https://formspree.io/f/xvoypkzn" method="POST" id="myForm">
+                        
+                    <label for="name">Name :</label>
+                    <input type="text" name="name">
+                        
+                    <label for="email">Your email :</label>
+                    <input type="email" name="email"> 
+                        
+                        
+                    <label for="message">Your message :</label>
+                    <textarea name="message"></textarea> 
+        
+                    <input type="hidden" name="_next" value="home.html"/>
+        
+                    <button id="submit" type="submit">Send</button>
+        
+                </form>
+                <div id="status">
+        
+                </div>
+            </div>
         </section>
     </main>
 
     <script src="./hamburgerMenu.js"></script>
     <script src="./projects.js"></script>
+    <script src="./contact.js"></script>
 </body>
 </html>

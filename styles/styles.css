@@ -327,6 +327,11 @@ nav i {
   visibility: hidden;
 }
 
+h2 {
+  font-size: 3rem;
+  position: relative;
+}
+
 .header {
   color: white;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assests/Photos/torontoBackground.jpg);
@@ -425,10 +430,6 @@ nav i {
   text-align: center;
   background-color: rgb(237, 237, 237);
 }
-.skills h2 {
-  font-size: 3rem;
-  position: relative;
-}
 .skills h2::before {
   content: "";
   position: absolute;
@@ -483,6 +484,64 @@ nav i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 20px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+          box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius: 10%;
+}
+
+#projects h2 {
+  text-align: center;
+}
+#projects h2::before {
+  content: "";
+  position: absolute;
+  left: 41.8%;
+  bottom: -10px;
+  width: 204px;
+  border-bottom: 5px solid black;
+}
+#projects img {
+  max-height: 300px;
+  margin: 40px 0;
+}
+
+.descriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  margin: 30px;
+}
+.descriptions .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.descriptions .links a {
+  margin: 0 20px 0 0;
+  color: white;
+  background-color: #bc13fe;
+  border: white solid 3px;
+  border-radius: 30%;
+  padding: 10px;
+}
+
+.techStack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.techStack p {
+  margin: 20px 20px 0 0;
 }
 
 .contact {
