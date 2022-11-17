@@ -17,10 +17,10 @@
     <section class="header">
         <nav>
             <ul class="mainNav">
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./about.html">About</i></a></li>
-                <li><a href="./projects.html">Projects</i></a></li>
-                <li><a href="./contact.html">Contact</i></a></li>
+                <li><a href="#about">About</i></a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</i></a></li>
+                <li><a href="#contact">Contact</i></a></li>
             </ul>
     
             <i id="hamburger" class="fa-solid fa-bars fa-2xl"></i>
@@ -42,7 +42,7 @@
         </div> <!-- end of wrapper-->
     </section> <!-- end of header section -->
     <main>
-        <section class="about">
+        <section id="about" class="about">
             <div class="contentWrapper">
                 <img src="./assests/Photos/self-image.jpg" alt="A portrait of myself">
                 <div class="aboutMe">
@@ -58,7 +58,7 @@
             </div> <!-- end of content wrapper-->
         </section> <!-- End of about -->
 
-        <section class="skills"> <!-- start of skills-->
+        <section id="skills" class="skills"> <!-- start of skills-->
             <div class="contentWrapper"> <!-- start of content wrapper -->
                 <h2>Skills</h2>
                 <div class="techStack">
@@ -109,32 +109,39 @@
                     </ul>
                 </div>
         </section>
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="contentWrapper">
-                <h1>Contact Me</h1>
-                <form action="https://formspree.io/f/xvoypkzn" method="POST" id="myForm">
+                <h2>Contact Me</h2>
+                
+                <div class="contactForm">
+                    <form action="https://formspree.io/f/xvoypkzn" method="POST" id="myForm">
+
+                        <div class="topForm">
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" name="name" placeholder="Full name">
+                            
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" name="email" placeholder="Email"> 
+                        </div>
                         
-                    <label for="name">Name :</label>
-                    <input type="text" name="name">
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea name="message" placeholder="Message"></textarea> 
                         
-                    <label for="email">Your email :</label>
-                    <input type="email" name="email"> 
+                        <input type="hidden" name="_next" value="home.html"/>
                         
-                        
-                    <label for="message">Your message :</label>
-                    <textarea name="message"></textarea> 
-        
-                    <input type="hidden" name="_next" value="home.html"/>
-        
-                    <button id="submit" type="submit">Send</button>
-        
-                </form>
+                        <button id="submit" type="submit">Send Message</button>
+                    
+                    </form>
+                </div> <!-- End of contact -->
                 <div id="status">
         
                 </div>
-            </div>
+            </div> <!-- End of content wrapper -->
         </section>
     </main>
+    <footer>
+        <h3>Daniel Ramsauer © 2022</h3>
+    </footer>
 
     <script src="./hamburgerMenu.js"></script>
     <script src="./projects.js"></script>
