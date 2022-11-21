@@ -1,22 +1,28 @@
 const projectLinks = [
     {
         name: 'Anime finder',
-        tech1: 'React',
-        tech2: 'HTML',
-        tech3: 'CSS',
-        tech4: 'Firebase',
+        tech: [
+                'React',
+                'HTML',
+                'CSS',
+                'Firebase',
+                'RESTful API',
+            ],
         livelink: 'https://animes-finder.netlify.app/',
         repo: 'https://github.com/DanRamsauer/daniel-ramsauer-project-three',
         img : './assests/Photos/animeFinder.png',
-        description: 'A React website that uses an api to display animes to the page and allows the user to add to favourites',
+        description: 'An indivisual coding project that uses an api to display animes to the page and allows the user to search and add them to a favourites list.',
         class: 'project'
     },
     {
         name: 'Book Club Reads',
-        tech1: 'React',
-        tech2: 'HTML',
-        tech3: 'SCSS',
-        tech4: 'Firebase',
+        tech: [
+            'React',
+            'HTML',
+            'SASS',
+            'Firebase',
+            'RESTful API',
+        ],
         livelink: 'https://junobookclub.netlify.app/',
         repo: 'https://github.com/juno-book-club/book-club',
         img : './assests/Photos/bookClubReads.png',
@@ -25,24 +31,28 @@ const projectLinks = [
     },
     {
         name: 'Currency Converter',
-        tech1: 'React',
-        tech2: 'HTML',
-        tech3: 'SCSS',
-        tech4: 'Firebase',
+        tech: [
+            'JavaScript',
+            'HTML',
+            'CSS',
+            'RESTful API',
+        ],
         livelink: 'https://incandescent-sprinkles-c54daa.netlify.app/',
         repo: 'https://github.com/Juno-Project-2/Currency-Converter',
         img : './assests/Photos/currencyConverter.png',
-        description: 'A website created with a partner that takes a number from the user and has them choose a source currency and target currency and it gives you the conversion rate',
+        description: 'A paired-programming project that allows the user to input an amount and has them choose a source currency and target currency and it gives the conversion rate.',
         class: 'project'
     },
     {
         name: 'Captured Landing Page',
-        tech1: 'HTML',
-        tech2: 'CSS',
+        tech: [
+            'HTML',
+            'CSS',
+        ],
         livelink: 'https://graceful-cajeta-2db571.netlify.app/',
         repo: 'https://github.com/DanRamsauer/daniel-ramsauer-project-one',
         img : './assests/Photos/Captured.png',
-        description: 'A landing page for a fake website',
+        description: 'An indivisual coding project that converts a PSD into a multi-page, functional, and responsive website.',
         class: 'project'
     },
 ]
@@ -60,10 +70,6 @@ const displayprojects = function () {
         const anchorOne = document.createElement('a');
         const anchorTwo = document.createElement('a');
         const pTwo = document.createElement('p');
-        const tStack1 = document.createElement('p');
-        const tStack2 = document.createElement('p');
-        const tStack3 = document.createElement('p');
-        const tStack4 = document.createElement('p');
         const tStackDiv = document.createElement('div');
         const anchorDiv = document.createElement('div');
 
@@ -73,18 +79,10 @@ const displayprojects = function () {
         anchorOne.href = project.livelink;
         anchorTwo.href = project.repo;
         pTwo.innerText = project.description;
-        tStack1.innerText = project.tech1;
-        tStack2.innerText = project.tech2;
-        tStack3.innerText = project.tech3;
-        tStack4.innerText = project.tech4;
         img.src = project.img;
         img.alt = `A screenshot of ${project.name}`
 
         li.appendChild(h3);
-        tStackDiv.appendChild(tStack1);
-        tStackDiv.appendChild(tStack2);
-        tStackDiv.appendChild(tStack3);
-        tStackDiv.appendChild(tStack4);
         anchorDiv.appendChild(anchorOne);
         anchorDiv.appendChild(anchorTwo);
         li.appendChild(tStackDiv);
@@ -96,14 +94,18 @@ const displayprojects = function () {
         
         div.classList.add(project.class);
         tStackDiv.classList.add('techStack');
-        tStack1.classList.add('flicker');
-        tStack2.classList.add('flicker');
-        tStack3.classList.add('flicker');
-        tStack4.classList.add('flicker');
         anchorDiv.classList.add('links');
         li.classList.add('descriptions');
         anchorOne.setAttribute('target', '_blank');
         anchorTwo.setAttribute('target', '_blank');
+        
+        project.tech.forEach(tStack => {
+            const stack = document.createElement('p');
+            stack.innerText = tStack;
+            stack.classList.add('flicker');
+            tStackDiv.appendChild(stack);
+        });
+
     });
 }
 

@@ -12,7 +12,7 @@
         position: absolute;
         left    : 0;
         bottom  : 0;
-        width   : 215px;
+        width   : 248px;
         border-bottom: 5px solid black;
     }
 
@@ -30,9 +30,10 @@
     }
 
     img{
-        max-width: 500px;
+        max-height: 400px;
+        max-width: 400px;
         border-radius: 50%;
-        border: 5px solid purple;
+        border: 5px solid rgb(106, 127, 219);
     }
 }
 .skills{

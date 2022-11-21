@@ -21,20 +21,4 @@
    h2{
     font-size: 3rem;
    }
-   .icons{
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        right: 30px;
-        bottom: 50%;
-
-        i{
-            margin-top: 40px;
-            transition: .5s;
-
-            &:hover{
-                transform: scale(1.3);
-            }
-        }
-    }
 }
