@@ -1,94 +1,40 @@
-@media (max-width: 950px) {
-    #projects{
+@media (max-width: 1370px) {
+    .techStack{
         flex-wrap: wrap;
-
-        .projectOne,
-        .projectTwo {
-        width: 100%;
-        }
+    }
+    .socialMedia{
+        text-align: center;
     }
 }
-
-@media (max-width: 730px) {
-    .home{
-        .icons{
-            flex-direction: row;
-            bottom: 20px;
-            left: 45%;
-        }
-        i{
-            margin-right: 15px;
+@media (max-width: 960px) {
+    .about,
+    .project{
+        img{
+            position: absolute;
+            left: 100000px;
         }
     }
-    .contact{
-        .contentWrapper{
-            width: 85%;
-        }
-    }
-    #projects{
-        
-        .descriptions {
-            opacity: 1;
-            position: relative;
-            transform: translate(-50%, -300px);
-        }
-        
-        .projectOne:hover img {
-            opacity: 1;
-        }
-        .projectTwo:hover img {
-            opacity: 1;
-        }
-        
-        .descriptions:hover {
-            opacity: 1;
-        }
+    .contactInfo{
+        flex-wrap: wrap;
     }
 }
-
-@media (max-width: 595px) {
-    .home{
+@media (max-width: 630px) {
+    .header{
         h1{
             text-align: center;
         }
     }
-    nav{
-        .mainNav{
-            visibility: hidden;
-            position: absolute;
-        }
-        i{
-            visibility: visible;
-            position: absolute;
-            top: 50px;
-            right: 50px;
-            z-index: 30;
-        }
-    }
-    h1{
-        margin-top: 150px;
-    }
-}
-
-@media (max-width: 595px) {
-    #projects{
-        .descriptions{
-            transform: translate(-50%, -240px);
+    .contactForm{
+        form{
+            width: 2000px;
+            button{
+                width: 100%;
+            }
         }
     }
 }
-
-@media (max-width: 495px) {
-    .home{
-        h2{
-            width: 80%;
-            text-align: center;
-        }
-    }
-}
-
-@media (max-width: 420px) {
-    .home{
+@media (max-width: 520px) {
+    .header{
         h1{
             font-size: 2.5rem;
         }
@@ -96,4 +42,137 @@
             font-size: 2rem;
         }
     }
+    h2{
+        font-size: 2rem;
+    }
+    .about{
+        h2{
+            width: 210px;
+        }
+    }
+    .skills{
+        h2{
+            width: 140px;
+        }
+    }
+    .contact{
+        h2{
+            width: 270px;
+        }
+    }
+    #projects{
+        h2{
+            width: 200px;
+        }
+    }
 }
+
+@media (max-width: 370px) {
+    .contactForm{
+        form{
+            width: 300px;
+            button{
+                width: 100%;
+            }
+        }
+    }
+}
+// @media (max-width: 950px) {
+    //     #projects{
+        //         flex-wrap: wrap;
+        
+        //         .projectOne,
+        //         .projectTwo {
+            //         width: 100%;
+            //         }
+            //     }
+            // }
+            
+            // @media (max-width: 730px) {
+//     .home{
+//         .icons{
+//             flex-direction: row;
+//             bottom: 20px;
+//             left: 45%;
+//         }
+//         i{
+//             margin-right: 15px;
+//         }
+//     }
+//     .contact{
+//         .contentWrapper{
+//             width: 85%;
+//         }
+//     }
+//     #projects{
+        
+//         .descriptions {
+//             opacity: 1;
+//             position: relative;
+//             transform: translate(-50%, -300px);
+//         }
+        
+//         .projectOne:hover img {
+//             opacity: 1;
+//         }
+//         .projectTwo:hover img {
+//             opacity: 1;
+//         }
+        
+//         .descriptions:hover {
+//             opacity: 1;
+//         }
+//     }
+// }
+
+// @media (max-width: 595px) {
+//     .home{
+//         h1{
+//             text-align: center;
+//         }
+//     }
+//     nav{
+//         .mainNav{
+//             visibility: hidden;
+//             position: absolute;
+//         }
+//         i{
+//             visibility: visible;
+//             position: absolute;
+//             top: 50px;
+//             right: 50px;
+//             z-index: 30;
+//         }
+//     }
+//     h1{
+//         margin-top: 150px;
+//     }
+// }
+
+// @media (max-width: 595px) {
+//     #projects{
+//         .descriptions{
+//             transform: translate(-50%, -240px);
+//         }
+//     }
+// }
+
+// @media (max-width: 495px) {
+//     .home{
+//         h2{
+//             width: 80%;
+//             text-align: center;
+//         }
+//     }
+// }
+
+// @media (max-width: 420px) {
+//     .home{
+//         h1{
+//             font-size: 2.5rem;
+//         }
+//         h2{
+//             font-size: 2rem;
+//         }
+//     }
+// }
